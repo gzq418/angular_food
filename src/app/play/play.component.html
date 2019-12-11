@@ -1,0 +1,105 @@
+
+<!--Main container-->
+<div class="container">
+
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-7">
+        <!-- Default form register -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">写下你自己的菜谱</p>
+
+    <div class="form-row mb-4">
+            <div class="col">
+                    <!-- Last name -->
+                    <input type="text" id="addplace" class="form-control" placeholder="编号" size="10" #no required>
+                </div>
+        <div class="col">
+            <!-- First name -->
+            <input type="char" id="addName" class="form-control" placeholder="名字" size="10" width="20" #name required>
+        </div>
+        <div class="col">
+            <!-- Last name -->
+            <input type="text" id="addplace" class="form-control" placeholder="产地" size="10" #place required>
+        </div>
+        
+   
+
+</div>
+
+
+    <!-- Password -->
+   
+
+    <!-- Phone number -->
+    <input type="email" id="adddescribe" class="form-control mb-4" placeholder="介绍" #describe required>
+
+    
+    <input type="text" id="addmake" class="form-control" placeholder="做法" #make required >
+
+    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+      
+    </small>
+
+   
+
+    <!-- Sign up button -->
+    <button class="btn btn-info my-4 btn-block" type="submit"(click)="add(no.value,name.value,place.value,describe.value,make.value);no.value='';name.value='';place.value='';describe.value='';make.value=''">添加</button>
+     
+    <!-- Social register -->
+
+ 
+
+</form>
+<!-- Default form register -->
+
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5">
+<img  src="assets/img/plan.jpg" width="300" height="300"/>
+
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12">
+
+
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6">
+
+
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6">
+
+
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+</div>
+<!--Main container-->

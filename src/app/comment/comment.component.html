@@ -1,0 +1,37 @@
+
+<div class="row mt-5 pt-5 animated fadeInLeft" data-wow-delay="0.5s">
+    <table class="table table-hover">
+      <thead class="bg-default">
+        <tr class="text-white">
+          <th>学 号</th>
+          <th>名 字</th>
+          <th>性 别</th>
+          <th>删 除</th>
+          <th>查 看</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of students" >
+         
+          <th scope="row">{{s.no}}</th>
+
+          <td>{{s.name}}</td>
+          <td>{{s.sex}}</td>
+
+          
+         <!-- <td>{{hero.isTop?'是':'否'}}</td> -->
+          <td>
+            <button type="button" class="btn btn-sm btn-danger my-0 waves-light" (click)="deletestudent(s.id)">
+              <i class="fa fa-trash"></i>
+            </button>
+          </td>
+          <td>
+              <a class="btn btn-sm btn-info my-0 waves-light" routerLink="../student">
+                <i class="fa fa-eye"></i>
+              </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
